@@ -9,7 +9,9 @@ function App() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:8000/api/allproduct");
+        const response = await fetch(
+          "http://api-sneaker.x10.mx/public/api/allproducts"
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch products");
         }
@@ -104,9 +106,7 @@ function App() {
                 <div className="Item_name">{product.name}</div>
                 <div className="Item_description">{product.description}</div>
                 <div className="Item_Footer">
-                  <div className="Item_price">
-                    {"$" + product.price.toFixed(2)}
-                  </div>
+                  <div className="Item_price">{"$" + product.price}</div>
                   <div
                     className="Item_button"
                     onClick={() => {
