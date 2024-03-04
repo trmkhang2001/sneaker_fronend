@@ -5,8 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
-First: 
+First:
+
 ### `npm install`
+
 Runs install package
 
 ### `npm start`
@@ -19,4 +21,4 @@ You may also see any lint errors in the console.
 
 ## Live Demo
 
-You can view live demo [Demo](https://facebook.com).
+You can view live demo [Demo](https://sneaker-fronend.vercel.app/).
