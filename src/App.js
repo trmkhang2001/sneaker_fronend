@@ -10,7 +10,7 @@ function App() {
     const fetchProducts = async () => {
       try {
         const response = await fetch(
-          "http://api-sneaker.x10.mx/public/api/allproducts"
+          "https://api-sneaker.x10.mx/public/api/allproducts"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch products");
